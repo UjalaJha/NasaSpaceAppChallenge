@@ -1,4 +1,4 @@
-![License](https://img.shields.io/github/license/UjalaJha/NasaSpaceAppChallenge)
+![License](https://img.shields.io/github/license/UjalaJha/NasaSpaceAppChallenge) ![Version](https://img.shields.io/badge/Version-1.0.0-Blue)
 
 # Automated Detection of Hazards
 Natural phenomena like flood, fire, and algae blooms are threats to the ecosystems and hamper the chain of the life cycle, making its timely detection and categorization an important factor for mitigation and recovery. Our aim with this effort is to detect and characterize the mentioned hazards, by which researchers and decision-makers can better understand their impacts and scope. We have carried out case studies associated with these phenomena and used satellite imagery and machine learning approaches to classify threshold values that define the boundary between flooded and non-flooded, severity fire, algae bloom classes quickly and accurately. This well-formed approach can reduce the time spent and help to provide accurate maps quickly what is crucial when disaster happens.
