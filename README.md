@@ -44,4 +44,14 @@ https://docs.google.com/presentation/d/13n61bEEQtS3t37t1cA-qKOqJivS8KNCkB4DhWwKq
 https://drive.google.com/file/d/1nYckXCvIn8bqF3lXh31hffVREZElPr2z/view?usp=sharing
 
 # Contribution :
-We encourage any improvements or suggestion over our project. For Communications please contact at jhaujala3@gmail.com or https://www.linkedin.com/in/ujalajha/
+We encourage any improvements or suggestion over our project. For Communications please contact at jhaujala3@gmail.com or [Ujala Jha](https://www.linkedin.com/in/ujalajha/) 
+
+# Project Team
+
+- [Ujala Jha](https://www.linkedin.com/in/ujalajha/) (core team)
+- [Juyee Sabade](https://www.linkedin.com/in/juyee-sabade-77a79a190/) (core team)
+- [Manish Sharma](https://www.linkedin.com/in/manish-sharma-236831121/) (core team)
+- [Gaurav Sahu](https://github.com/paulmelnikow) (core team)
+- [Syam Kakarla](https://www.linkedin.com/in/syam-kakarla/) (core team)
+- [Prakash Jha](https://www.linkedin.com/in/p3j/) (core team)
+
