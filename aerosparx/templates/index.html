@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Page Preloder -->
+<div id="preloder">
+    <div class="loader"></div>
+</div>
+
+<!-- Header section -->
+<header class="header-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3">
+                <div class="site-logo">
+                    <img src="{{ url_for('static', filename='img/earth_logo.png') }}" alt="">
+                </div>
+                <div class="nav-switch">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-9">
+                <a href="" class="site-btn header-btn">Get Started</a>
+                <nav class="main-menu">
+                    <ul>
+                        <li><a href="{{ url_for('home') }}">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Header section end -->
+
+
+<!-- Hero section -->
+<section class="hero-section set-bg" data-setbg="{{ url_for('static', filename='img/real-space.jpg') }}">
+    <div class="container">
+    <!-- 	<div class="hero-text text-white">
+            <h2>Get The Best Free Online Courses</h2>
+            
+        </div> -->
+        <!-- <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <form class="intro-newslatter">
+                    <input type="text" placeholder="Name">
+                    <input type="text" class="last-s" placeholder="E-mail">
+                    <button class="site-btn">Sign Up Now</button>
+                </form>
+            </div>
+        </div> -->
+    </div>
+</section>
+<!-- Hero section end -->
+
+
+<!-- categories section -->
+<section class="categories-section spad">
+    <div class="container">
+        <div class="section-title">
+            <h2>Features we provide</h2>
+            <p>We help you identify hazards and help researchers and decision-makers better understand its impacts and scope</p>
+        </div>
+        <div class="row">
+            <!-- categorie -->
+            <div class="col-lg-4 col-md-6">
+                <div class="categorie-item">
+                    <div class="ci-thumb set-bg" style="height:190px" data-setbg="{{ url_for('static', filename='img/categories/floods.jpg') }}"></div>
+                    <a href="{{ url_for('disaster_selection',phenomenon='flood') }}">
+                        <div class="ci-text">
+                            <h5>Flood Detection</h5>
+                            <!-- <p>Lorem ipsum dolor sit amet, consectetur</p>
+                            <span>120 Courses</span> -->
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- categorie -->
+            <div class="col-lg-4 col-md-6">
+                <div class="categorie-item">
+                    <div class="ci-thumb set-bg" style="height:190px" data-setbg="{{ url_for('static', filename='img/categories/fire.jpg') }}"></div>
+                    <a href="{{ url_for('disaster_selection',phenomenon='fire') }}">
+                    <div class="ci-text">
+                        <h5>Fire Detection</h5>
+                        <!-- <p>Lorem ipsum dolor sit amet, consectetur</p>
+                        <span>70 Courses</span> -->
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <!-- categorie -->
+            <div class="col-lg-4 col-md-6">
+                <div class="categorie-item">
+                    <div class="ci-thumb set-bg"  style="height:190px" data-setbg="{{ url_for('static', filename='img/categories/algae.jpg') }}"></div>
+                    <a href="{{ url_for('disaster_selection',phenomenon='algae') }}">
+                    <div class="ci-text">
+                        <h5>Algae Bloom Detection</h5>
+                        <!-- <p>Lorem ipsum dolor sit amet, consectetur</p>
+                        <span>55 Courses</span> -->
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <!-- categorie -->
+        
+        </div>
+    </div>
+</section>
+<!-- categories section end -->
+{% endblock %}

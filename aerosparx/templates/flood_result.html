@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Header section -->
+	<header class="header-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3">
+					<div class="site-logo">
+						<img src="img/logo.png" alt="">
+					</div>
+					<div class="nav-switch">
+						<i class="fa fa-bars"></i>
+					</div>
+				</div>
+				<div class="col-lg-9 col-md-9">
+					
+					<nav class="main-menu">
+						<ul>
+							<li><a href="{{ url_for('home') }}">Home</a></li>
+							<li><a href="#">About us</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Header section end -->
+
+
+	<!-- Page info -->
+	<div class="page-info-section set-bg" data-setbg="{{ url_for('static', filename='img/page-bg/flood2.jpg') }}">
+		<div class="container">
+			<div class="site-breadcrumb">
+				<a href="{{ url_for('home') }}">Home</a>
+				<span style="color:rgb(35, 35, 134)">Floods</span>
+			</div>
+		</div>
+	</div>
+	<!-- Page info end -->
+
+
+	<!-- search section -->
+	<section class="search-section ss-other-page">
+		<div class="container">
+			<div class="search-warp">
+				<div class="section-title text-white">
+					<span>A flood is an overflow of water that submerges land that is usually dry. In the sense of "flowing water", the word may also be applied to the inflow of the tide. Floods are an area of study of the discipline hydrology and are of significant concern in agriculture, civil engineering and public health.</span>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+    <!-- search section end -->
+   
+    <section class="categories-section spad">
+        <div class="container">
+            <div class="section-title">
+                <h2>Flood mapping of {{ location }}</h2>
+            </div>
+        </div>
+        <div class="row">
+            <!-- categorie -->
+            <div class="col-lg-6 col-md-12">
+				<h3 style="margin-left: 8rem;">Before Flood</h3>
+                <div class="categorie-item">
+                    {% if location=='kerala' %}
+			            <img src="{{ url_for('static', filename='img/floodresult/kerala_before_flood.png') }}">
+
+		            {% elif location=='bihar' %}
+			            <img src="{{ url_for('static', filename='img/floodresult/bihar_before_flood.png') }}">
+		            {% endif %}
+                </div>
+            </div>
+            <!-- categorie -->
+            <div class="col-lg-6 col-md-12">
+				<h3 style="margin-left: 8rem;">After Flood</h3>
+                <div class="categorie-item">
+                    {% if location=='kerala' %}
+			            <img src="{{ url_for('static', filename='img/floodresult/kerala_after_flood.png') }}">
+
+		            {% elif location=='bihar' %}
+			            <img src="{{ url_for('static', filename='img/floodresult/bihar_after_flood.png') }}">
+		            {% endif %}
+                </div>
+                    
+            </div>
+    </section>
+
+
+{% endblock %}

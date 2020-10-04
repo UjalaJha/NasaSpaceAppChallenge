@@ -1,0 +1,151 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Header section -->
+	<header class="header-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3">
+					<div class="site-logo">
+						<img src="img/logo.png" alt="">
+					</div>
+					<div class="nav-switch">
+						<i class="fa fa-bars"></i>
+					</div>
+				</div>
+				<div class="col-lg-9 col-md-9">
+					
+					<nav class="main-menu">
+						<ul>
+							<li><a href="{{ url_for('home') }}">Home</a></li>
+							<li><a href="#">About us</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Header section end -->
+
+
+	<!-- Page info -->
+	<div class="page-info-section set-bg" data-setbg="{{ url_for('static', filename='img/page-bg/algae.jpg') }}">
+		<div class="container">
+			<div class="site-breadcrumb">
+				<a href="{{ url_for('home') }}">Home</a>
+				<span style="color:rgb(9, 29, 10)">Algae Blooms</span>
+			</div>
+		</div>
+	</div>
+	<!-- Page info end -->
+
+
+	<!-- search section -->
+	<section class="search-section ss-other-page">
+		<div class="container">
+			<div class="search-warp" style="background-color: rgb(9, 44, 9);">
+				<div class="section-title text-white">
+					<span>An algal bloom or algae bloom is a rapid increase or accumulation in the population of algae in freshwater or marine water systems, and is often recognized by the discoloration in the water from their pigments.</span>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<!-- search section end -->
+
+
+	<!-- course section -->
+	<section class="course-section spad pb-0">
+		<div class="course-warp">
+			<ul class="course-filter controls">
+				<li class="control active" data-filter="all">All</li>
+				<li class="control" data-filter=".india">India</li>
+				<li class="control" data-filter=".usa">USA</li>
+				<!-- <li class="control" data-filter=".indonesia">Indonesia</li> -->
+			</ul>                                       
+			<div class="row course-items-area">
+				<!-- course -->
+				<div class="mix col-lg-4 col-md-4 col-sm-6 usa">
+					<div class="course-item">
+						<div class="course-thumb set-bg" data-setbg="{{ url_for('static', filename='img/algae/harsha.jpg') }}">
+                            <div class="price" style="background: #2f4d2e;"><a style="color:white" href="{{ url_for('get_result',phenomenon='algae',location='harsha') }}">Check Algae Bloom Analysis</a></div>
+						</div>
+						<div class="course-info">
+							<div class="course-text">
+								<h5>Harsha Lake</h5>
+								<p>Situated in Ohio</p>
+								<!-- <div class="students">683 deaths</div> -->
+							</div>
+							<!-- <div class="course-author">
+								<div class="ca-pic set-bg" data-setbg="img/authors/1.jpg"></div>
+								<p>William Parker, <span>Developer</span></p>
+							</div> -->
+						</div>
+					</div>
+				</div>
+				<!-- course -->
+				<div class="mix col-lg-4 col-md-4 col-sm-6 india">
+					<div class="course-item">
+						<div class="course-thumb set-bg" data-setbg="{{ url_for('static', filename='img/algae/powai.jpg') }}">
+							<div class="price" style="background: #2f4d2e;"><a style="color:white" href="{{ url_for('get_result',phenomenon='algae',location='powai') }}">Check Algae Bloom Analysis</a></div>
+						</div>
+						<div class="course-info">
+							<div class="course-text">
+								<h5>Powai Lake</h5>
+								<p>Situated in Mumbai</p>
+								<!-- <div class="students">
+                                    25 deaths
+                                </div> -->
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<!-- course -->
+				<!-- <div class="mix col-lg-4 col-md-4 col-sm-6 indonesia">
+					<div class="course-item">
+						<div class="course-thumb set-bg" data-setbg="{{ url_for('static', filename='img/flood/indonesia-flood.jpg') }}">
+							<div class="price" style="background: #2f4d2e;"><a>Check Algae Bloom Analysis</a></div> 
+						</div>
+						<div class="course-info">
+							<div class="course-text">
+								<h5>Indonesia Floods 2018</h5>
+								<p>On 22 December 2018, a tsunami that followed an eruption and partial collapse of the Anak Krakatau volcano in the Sunda Strait struck several coastal regions of Banten in Java and Lampung in Sumatra, Indonesia.</p>
+								<div class="students">426 deaths</div>
+							</div> -->
+							<!-- <div class="course-author">
+								<div class="ca-pic set-bg" data-setbg="img/authors/3.jpg"></div>
+								<p>William Parker, <span>Developer</span></p>
+							</div> -->
+						<!-- </div>
+					</div>
+				</div> -->
+				
+			</div>
+			
+		</div>
+	</section>
+	<!-- course section end -->
+
+
+	<!-- banner section -->
+	<!-- <section class="banner-section spad">
+		<div class="container">
+			<div class="section-title mb-0 pb-2">
+				<h2>Join Our Community Now!</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.</p>
+			</div>
+			<div class="text-center pt-5">
+				<a href="#" class="site-btn">Register Now</a>
+			</div>
+		</div>
+	</section> -->
+	<!-- banner section end -->
+
+{% endblock %}

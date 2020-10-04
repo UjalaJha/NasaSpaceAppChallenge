@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Header section -->
+	<header class="header-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3">
+					<div class="site-logo">
+						<img src="img/logo.png" alt="">
+					</div>
+					<div class="nav-switch">
+						<i class="fa fa-bars"></i>
+					</div>
+				</div>
+				<div class="col-lg-9 col-md-9">
+					
+					<nav class="main-menu">
+						<ul>
+							<li><a href="{{ url_for('home') }}">Home</a></li>
+							<li><a href="#">About us</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Header section end -->
+
+
+	<!-- Page info -->
+	<div class="page-info-section set-bg" data-setbg="{{ url_for('static', filename='img/page-bg/algae.jpg') }}">
+		<div class="container">
+			<div class="site-breadcrumb">
+				<a href="{{ url_for('home') }}">Home</a>
+				<span style="color:rgb(47, 87, 19)">Algae Blooms</span>
+			</div>
+		</div>
+	</div>
+	<!-- Page info end -->
+
+
+	<!-- search section -->
+	<section class="search-section ss-other-page">
+		<div class="container">
+			<div class="search-warp" style="background-color: rgb(9, 44, 9);">
+				<div class="section-title text-white">
+					<span>An algal bloom or algae bloom is a rapid increase or accumulation in the population of algae in freshwater or marine water systems, and is often recognized by the discoloration in the water from their pigments.</span>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+    <!-- search section end -->
+   
+    <section class="categories-section spad">
+        <div class="container">
+            <div class="section-title">
+                <h2>Algae mapping of {{ location }}</h2>
+            </div>
+        </div>
+        <div class="row">
+            <!-- categorie -->
+            <div class="col-lg-12 col-md-12">
+                <div class="categorie-item">
+                    
+                    {% if location=='harsha' %}
+                        <img src="{{ url_for('static', filename='img/algaeresult/algae_plot_harsha.png') }}">
+                        
+                    {% elif location=='powai' %}
+                    <img src="{{ url_for('static', filename='img/algaeresult/algae_plot_powai.png') }}">
+		            {% endif %}
+                </div>
+            </div>
+            <!-- categorie -->
+            <!-- <div class="col-lg-6 col-md-12">
+                <div class="categorie-item">
+                    <h3>After Flood</h3>
+                    {% if location=='kerala' %}
+			            <img src="{{ url_for('static', filename='img/floodresult/after_flood_plot_kerala.png') }}">
+
+		            {% elif location=='bihar' %}
+			            <img src="{{ url_for('static', filename='img/floodresult/after_flood_plot_bihar.png') }}">
+		            {% endif %}
+                </div>
+                    
+            </div> -->
+    </section>
+
+
+{% endblock %}

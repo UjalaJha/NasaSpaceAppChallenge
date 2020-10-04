@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Header section -->
+	<header class="header-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3">
+					<div class="site-logo">
+						<img src="img/logo.png" alt="">
+					</div>
+					<div class="nav-switch">
+						<i class="fa fa-bars"></i>
+					</div>
+				</div>
+				<div class="col-lg-9 col-md-9">
+					
+					<nav class="main-menu">
+						<ul>
+							<li><a href="{{ url_for('home') }}">Home</a></li>
+							<li><a href="#">About us</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Header section end -->
+
+
+	<!-- Page info -->
+	<div class="page-info-section set-bg" data-setbg="{{ url_for('static', filename='img/page-bg/wildfire.jpg') }}">
+		<div class="container">
+			<div class="site-breadcrumb">
+				<a href="{{ url_for('home') }}">Home</a>
+				<span style="color:rgb(216, 178, 8)">Fires</span>
+			</div>
+		</div>
+	</div>
+    <!-- Page info end -->
+
+    	<!-- search section -->
+	<section class="search-section ss-other-page">
+		<div class="container">
+			<div class="search-warp" style="background-color: rgb(190, 91, 21);">
+				<div class="section-title text-white">
+					<span>A wildfire, wildland fire or rural fire is an unplanned, unwanted, uncontrolled fire in an area of combustible vegetation starting in rural areas.</span>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+    <!-- search section end -->
+    
+    <div>
+		{% if location=='australia' %}
+			<img src="{{ url_for('static', filename='img/fireresult/fire_plot_australia.png') }}">
+
+		{% elif location=='empedrado' %}
+			<img src="{{ url_for('static', filename='img/fireresult/fire_plot_empedrado.png') }}">
+		{% endif %}
+    </div>
+
+    <section class="single-course spad pb-0">
+		<div class="container">
+			<div class="course-meta-area">
+				<div class="row">
+					<div class="col-lg-10 offset-lg-1">
+						<!-- <div class="course-note">Featured Course</div> -->
+						<h3>Affected Areas</h3>
+						<div class="course-metas">
+							<div class="course-meta">
+								<div class="course-author">
+									<h6>Enhanced Regrowth</h6>
+									<p>{{ affected_areas.enhanced_regrowth }}sqkm</p>
+								</div>
+							</div>
+							<div class="course-meta">
+								<div class="cm-info">
+									<h6>Unburned</h6>
+									<p>{{ affected_areas.unburned }}sqkm</p>
+								</div>
+							</div>
+							<div class="course-meta">
+								<div class="cm-info">
+									<h6>Low</h6>
+									<p>{{ affected_areas.low }}sqkm</p>
+								</div>
+							</div>
+							<div class="course-meta">
+								<div class="cm-info">
+									<h6>Moderate</h6>
+									<p>{{ affected_areas.moderate }}sqkm</p>
+								</div>
+                            </div>
+                            <div class="course-meta">
+								<div class="cm-info">
+									<h6>High</h6>
+									<p>{{ affected_areas.high }}sqkm</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </div>
+    </section>
+	<br>
+
+
+
+{% endblock %}

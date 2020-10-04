@@ -1,0 +1,152 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Header section -->
+	<header class="header-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3">
+					<div class="site-logo">
+						<img src="img/logo.png" alt="">
+					</div>
+					<div class="nav-switch">
+						<i class="fa fa-bars"></i>
+					</div>
+				</div>
+				<div class="col-lg-9 col-md-9">
+					
+					<nav class="main-menu">
+						<ul>
+							<li><a href="{{ url_for('home') }}">Home</a></li>
+							<li><a href="#">About us</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Header section end -->
+
+
+	<!-- Page info -->
+	<div class="page-info-section set-bg" data-setbg="{{ url_for('static', filename='img/page-bg/wildfire.jpg') }}">
+		<div class="container">
+			<div class="site-breadcrumb">
+				<a href="{{ url_for('home') }}">Home</a>
+				<span style="color:rgb(216, 178, 8)">Fires</span>
+			</div>
+		</div>
+	</div>
+	<!-- Page info end -->
+
+
+	<!-- search section -->
+	<section class="search-section ss-other-page">
+		<div class="container">
+			<div class="search-warp" style="background-color: rgb(190, 91, 21);">
+				<div class="section-title text-white">
+					<span>A wildfire, wildland fire or rural fire is an unplanned, unwanted, uncontrolled fire in an area of combustible vegetation starting in rural areas.</span>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<!-- search section end -->
+
+
+	<!-- course section -->
+	<section class="course-section spad pb-0">
+		<div class="course-warp">
+			<ul class="course-filter controls">
+				<li class="control active" data-filter="all">All</li>
+				<li class="control" data-filter=".kerala">California</li>
+				<li class="control" data-filter=".bihar">Australia</li>
+				<li class="control" data-filter=".indonesia">Empedrado</li>
+			</ul>                                       
+			<div class="row course-items-area">
+				<!-- course -->
+				<div class="mix col-lg-4 col-md-4 col-sm-6 kerala">
+					<div class="course-item">
+						<div class="course-thumb set-bg" data-setbg="{{ url_for('static', filename='img/fire/california.jpg') }}">
+                            <div class="price" style="background: #e97e05;"><a style="color:white" href="{{ url_for('get_result',phenomenon='fire',location='california') }}">Check Fire Analysis</a></div>
+						</div>
+						<div class="course-info">
+							<div class="course-text">
+								<h5>California Fires 2020</h5>
+								<p>On 16 August 2018, severe floods affected the south Indian state Kerala, due to unusually high rainfall during the monsoon season. It was the worst flood in Kerala in nearly a century. Over 483 people died, and 140 are missing.</p>
+								<div class="students">683 deaths</div>
+							</div>
+							<!-- <div class="course-author">
+								<div class="ca-pic set-bg" data-setbg="img/authors/1.jpg"></div>
+								<p>William Parker, <span>Developer</span></p>
+							</div> -->
+						</div>
+					</div>
+				</div>
+				<!-- course -->
+				<div class="mix col-lg-4 col-md-4 col-sm-6 bihar">
+					<div class="course-item">
+						<div class="course-thumb set-bg" data-setbg="{{ url_for('static', filename='img/fire/australia.jpg') }}">
+							<div class="price" style="background: #e97e05;"><a style="color:white" href="{{ url_for('get_result',phenomenon='fire',location='australia') }}">Check Fire Analysis</a></div>
+						</div>
+						<div class="course-info">
+							<div class="course-text">
+								<h5>Australia Fires 2020</h5>
+								<p>The 2019–20 Australian bushfire season, colloquially known as the Black Summer, was a period of unusually intense bushfires in many parts of Australia.As of 9 March 2020, the fires burnt an estimated 18.6 million hectares, destroyed over 5,900 buildings (including 2,779 homes).</p>
+								<div class="students">
+                                    34 deaths
+                                </div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<!-- course -->
+				<div class="mix col-lg-4 col-md-4 col-sm-6 indonesia">
+					<div class="course-item">
+						<div class="course-thumb set-bg" data-setbg="{{ url_for('static', filename='img/fire/colorado.jpeg') }}">
+							<div class="price" style="background: #e97e05;"><a style="color:white" href="{{ url_for('get_result',phenomenon='fire',location='empedrado') }}">Check Fire Analysis</a></div> 
+						</div>
+						<div class="course-info">
+							<div class="course-text">
+								<h5>Empedrado Fires 2016-17</h5>
+								<p>As of late January, the fires had consumed roughly 273,000 hectares (1,060 square miles), burned several villages to the ground, and killed at least 11 people, according to news reports. The burned area continues to grow, and multiple towns remain on red alert.</p>
+								<div class="students">426 deaths</div>
+							</div>
+							<!-- <div class="course-author">
+								<div class="ca-pic set-bg" data-setbg="img/authors/3.jpg"></div>
+								<p>William Parker, <span>Developer</span></p>
+							</div> -->
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+	</section>
+	<!-- course section end -->
+
+
+	<!-- banner section -->
+	<!-- <section class="banner-section spad">
+		<div class="container">
+			<div class="section-title mb-0 pb-2">
+				<h2>Join Our Community Now!</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.</p>
+			</div>
+			<div class="text-center pt-5">
+				<a href="#" class="site-btn">Register Now</a>
+			</div>
+		</div>
+	</section> -->
+	<!-- banner section end -->
+
+{% endblock %}

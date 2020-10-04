@@ -1,0 +1,151 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Header section -->
+	<header class="header-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3">
+					<div class="site-logo">
+						<img src="img/logo.png" alt="">
+					</div>
+					<div class="nav-switch">
+						<i class="fa fa-bars"></i>
+					</div>
+				</div>
+				<div class="col-lg-9 col-md-9">
+					
+					<nav class="main-menu">
+						<ul>
+							<li><a href="{{ url_for('home') }}">Home</a></li>
+							<li><a href="#">About us</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Header section end -->
+
+
+	<!-- Page info -->
+	<div class="page-info-section set-bg" data-setbg="{{ url_for('static', filename='img/page-bg/flood2.jpg') }}">
+		<div class="container">
+			<div class="site-breadcrumb">
+				<a href="{{ url_for('home') }}">Home</a>
+				<span style="color:rgb(35, 35, 134)">Floods</span>
+			</div>
+		</div>
+	</div>
+	<!-- Page info end -->
+
+
+	<!-- search section -->
+	<section class="search-section ss-other-page">
+		<div class="container">
+			<div class="search-warp">
+				<div class="section-title text-white">
+					<span>A flood is an overflow of water that submerges land that is usually dry. In the sense of "flowing water", the word may also be applied to the inflow of the tide. Floods are an area of study of the discipline hydrology and are of significant concern in agriculture, civil engineering and public health.</span>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<!-- search section end -->
+
+
+	<!-- course section -->
+	<section class="course-section spad pb-0">
+		<div class="course-warp">
+			<ul class="course-filter controls">
+				<li class="control active" data-filter="all">All</li>
+				<li class="control" data-filter=".kerala">Kerala</li>
+				<li class="control" data-filter=".bihar">Bihar</li>
+				<li class="control" data-filter=".indonesia">Indonesia</li>
+			</ul>                                       
+			<div class="row course-items-area">
+				<!-- course -->
+				<div class="mix col-lg-4 col-md-4 col-sm-6 kerala">
+					<div class="course-item">
+						<div class="course-thumb set-bg" data-setbg="{{ url_for('static', filename='img/flood/kerala-flood.jpg') }}">
+                            <div class="price" style="background: #3829c0;"><a style="color:white" href="{{ url_for('get_result',phenomenon='flood',location='kerala') }}">Check Flood Analysis</a></div>
+						</div>
+						<div class="course-info">
+							<div class="course-text">
+								<h5>Kerala Floods 2018</h5>
+								<p>On 16 August 2018, severe floods affected the south Indian state Kerala, due to unusually high rainfall during the monsoon season. It was the worst flood in Kerala in nearly a century. Over 483 people died, and 140 are missing.</p>
+								<div class="students">683 deaths</div>
+							</div>
+							<!-- <div class="course-author">
+								<div class="ca-pic set-bg" data-setbg="img/authors/1.jpg"></div>
+								<p>William Parker, <span>Developer</span></p>
+							</div> -->
+						</div>
+					</div>
+				</div>
+				<!-- course -->
+				<div class="mix col-lg-4 col-md-4 col-sm-6 bihar">
+					<div class="course-item">
+						<div class="course-thumb set-bg" data-setbg="{{ url_for('static', filename='img/flood/bihar-flood.jpg') }}">
+							<div class="price" style="background: #3829c0;"><a style="color:white" href="{{ url_for('get_result',phenomenon='flood',location='bihar') }}">Check Flood Analysis</a></div>
+						</div>
+						<div class="course-info">
+							<div class="course-text">
+								<h5>Bihar floods 2020</h5>
+								<p>In 2020, altogether 64 blocks had been affected by floods across 10 districts in Bihar, including East Champaran, West Champaran, Gopalganj, Muzaffarpur, Sitamarhi, Sheohar, Supaul, Kishanganj, Darbhanga, and Khagaria. </p>
+								<div class="students">
+                                    25 deaths
+                                </div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<!-- course -->
+				<div class="mix col-lg-4 col-md-4 col-sm-6 indonesia">
+					<div class="course-item">
+						<div class="course-thumb set-bg" data-setbg="{{ url_for('static', filename='img/flood/indonesia-flood.jpg') }}">
+							<div class="price" style="background: #3829c0;"><a>Check Flood Analysis</a></div> 
+						</div>
+						<div class="course-info">
+							<div class="course-text">
+								<h5>Indonesia Floods 2018</h5>
+								<p>On 22 December 2018, a tsunami that followed an eruption and partial collapse of the Anak Krakatau volcano in the Sunda Strait struck several coastal regions of Banten in Java and Lampung in Sumatra, Indonesia.</p>
+								<div class="students">426 deaths</div>
+							</div>
+							<!-- <div class="course-author">
+								<div class="ca-pic set-bg" data-setbg="img/authors/3.jpg"></div>
+								<p>William Parker, <span>Developer</span></p>
+							</div> -->
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+	</section>
+	<!-- course section end -->
+
+
+	<!-- banner section -->
+	<!-- <section class="banner-section spad">
+		<div class="container">
+			<div class="section-title mb-0 pb-2">
+				<h2>Join Our Community Now!</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.</p>
+			</div>
+			<div class="text-center pt-5">
+				<a href="#" class="site-btn">Register Now</a>
+			</div>
+		</div>
+	</section> -->
+	<!-- banner section end -->
+
+{% endblock %}
