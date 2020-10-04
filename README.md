@@ -1,4 +1,4 @@
-![License](https://img.shields.io/github/license/UjalaJha/NasaSpaceAppChallenge) ![Version](https://img.shields.io/badge/Version-1.0.0-Blue) 
+![License](https://img.shields.io/github/license/UjalaJha/NasaSpaceAppChallenge) ![Version](https://img.shields.io/badge/Version-1.0.0-blue) 
 ![Satellite](https://img.shields.io/badge/Satellite-Sentinel--2-yellow) ![Python](https://img.shields.io/badge/Python-3.x-success) ![Flask](https://img.shields.io/badge/App-Flask-yellow) ![Eartpy](https://img.shields.io/badge/Analytics-EarthPy-red)
 
 # Automated Detection of Hazards
