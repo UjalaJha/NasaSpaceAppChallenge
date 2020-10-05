@@ -37,11 +37,9 @@ Natural phenomena like flood, fire, and algae blooms are threats to the ecosyste
 
 We have used a gradient boosting framework that uses tree-based algorithms to solve the problem ie., detection of flooded areas. We used python as the coding language, QGIS, ArcGis, EarthPy, LightGBM, Flask, RasterIO, GDAL software’s are used to develop a Machine learning model that detects the flooded area and non-flooded area.
 
-# PPT Deck Link : 
-https://docs.google.com/presentation/d/13n61bEEQtS3t37t1cA-qKOqJivS8KNCkB4DhWwKqqhQ/edit?usp=sharing
-
-# Video Link :
-https://drive.google.com/file/d/1nYckXCvIn8bqF3lXh31hffVREZElPr2z/view?usp=sharing
+# Resources 
+- [PPT Deck Link](https://docs.google.com/presentation/d/13n61bEEQtS3t37t1cA-qKOqJivS8KNCkB4DhWwKqqhQ/edit?usp=sharing)
+- [Video Link](https://drive.google.com/file/d/1nYckXCvIn8bqF3lXh31hffVREZElPr2z/view?usp=sharing)
 
 # Contribution :
 We encourage any improvements or suggestion over our project. For Communications please contact at jhaujala3@gmail.com or [Ujala Jha](https://www.linkedin.com/in/ujalajha/) 
