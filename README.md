@@ -49,7 +49,7 @@ We encourage any improvements or suggestion over our project. For Communications
 - [Ujala Jha](https://www.linkedin.com/in/ujalajha/) (core team)
 - [Juyee Sabade](https://www.linkedin.com/in/juyee-sabade-77a79a190/) (core team)
 - [Manish Sharma](https://www.linkedin.com/in/manish-sharma-236831121/) (core team)
-- [Gaurav Sahu](https://github.com/paulmelnikow) (core team)
+- [Gaurav Sahu](https://www.linkedin.com/in/gs-98/) (core team)
 - [Syam Kakarla](https://www.linkedin.com/in/syam-kakarla/) (core team)
 - [Prakash Jha](https://www.linkedin.com/in/p3j/) (core team)
 
