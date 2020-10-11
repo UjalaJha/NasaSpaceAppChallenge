@@ -6,7 +6,7 @@ Natural phenomena like flood, fire, and algae blooms are threats to the ecosyste
 
 *All the bands Mentioned below is of SENTINEL 2 Satellite Imagery Bands Launched by Europe Space Agency.*
 
-# Flood
+# [Flood](https://github.com/UjalaJha/NasaSpaceAppChallenge/tree/master/Flood%20Detection)
 - Initially, we have used the Green Band (B3), Near Infrared (NIR) Band (B8) of the data, before and after flood satellite images gathered using Sentinel-2 to calculate the **Normalized Difference Water Index (NDWI)** which differentiates the water body and dry land from satellite images.
 - Then we have generated ground truth for the satellite images using the NDWI of pre-flood and post-flood.
 - Using the ground truth generated from the NDWI, we have developed the machine learning model to classify the flood area and non-flood area.
@@ -14,7 +14,7 @@ Natural phenomena like flood, fire, and algae blooms are threats to the ecosyste
 ![Image of Flood Detection](https://github.com/UjalaJha/NasaSpaceAppChallenge/blob/master/Images/flood.PNG)
 
 
-# Fire
+# [Fire](https://github.com/UjalaJha/NasaSpaceAppChallenge/tree/master/Fire_detection_classification)
 - We have used the Near Infrared (NIR) Band (B8A) and the Shortwave Infrared (SWIR) Band (B12) from Sentinel-2 satellite imagery, both pre-fire and post-fire for calculating the **Difference Normalized Burn Ratio (DNBR)**.
 - The basis of this approach is the fact that natural vegetation affected by fires reflect characteristically in the above mentioned bands of the spectrum.
 - The DNBR is then used to categorize the focus area into various severity levels.
@@ -23,7 +23,7 @@ Natural phenomena like flood, fire, and algae blooms are threats to the ecosyste
 ![Image of Fire Detection](https://github.com/UjalaJha/NasaSpaceAppChallenge/blob/master/Images/fire.PNG)
 
 
-# Harmful Algae Bloom
+# [Harmful Algae Bloom](https://github.com/UjalaJha/NasaSpaceAppChallenge/tree/master/HarmfulAlgaeBloom)
 - Initially we have used the sentinel 2 satellite imagery and segregated the bands and read its values for calculating to NDWI using green band (b3) and NIR band (Band 8). We have classified the water bodies from the image.
 - Post classifying the water bodies, we have used following algorithm 
   - **Al10SABI** - Measures chlorophyll - Blue Band(B2), Green Band(B3), Red Band(B4) and NIR Band(B8 or B8A)
@@ -35,7 +35,8 @@ Natural phenomena like flood, fire, and algae blooms are threats to the ecosyste
 
 # Tools and Technologies Used :
 
-We have used a gradient boosting framework that uses tree-based algorithms to solve the problem ie., detection of flooded areas. We used python as the coding language, QGIS, ArcGis, EarthPy, LightGBM, Flask, RasterIO, GDAL software’s are used to develop a Machine learning model that detects the flooded area and non-flooded area.
+We have used a gradient boosting framework that uses tree-based algorithms to solve the problem ie., detection of flooded areas. 
+We used python as the coding language, QGIS, ArcGis, EarthPy, LightGBM, Flask, RasterIO, GDAL software’s are used to develop a Machine learning model that detects the flooded area and non-flooded area.
 
 # Resources 
 - [PPT Deck Link](https://docs.google.com/presentation/d/13n61bEEQtS3t37t1cA-qKOqJivS8KNCkB4DhWwKqqhQ/edit?usp=sharing)
